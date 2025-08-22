@@ -14,6 +14,28 @@ This project provides a fully automated and explainable pipeline for predicting 
 
 ---
 
+## 🔍 Use Case
+
+The pipeline has been tested on a **financial dashboard system** that processes user account data, transaction history, and market trends to provide:
+
+- Monthly spending insights
+- Savings goal tracking
+- Investment performance summaries
+- Real-time visual feedback
+- Personalized financial recommendations
+
+---
+
+## 🧠 Features
+
+- 📄 LLM-based requirements generation (via PHI-2)
+- 🏗️ Architecture prediction using logistic regression (e.g., Event-Driven, MVC, Microservices, Layered)
+- ⚖️ SHAP-based model explainability
+- 📊 Natural language justification generator
+- 🧪 Tested with real-world-style case studies
+
+---
+
 ## 📁 Directory Structure
 
 ├── scripts/
@@ -38,6 +60,28 @@ Sentence Embeddings	            |   all-MiniLM-L6-v2 via sentence-transformers
 Architecture Predictor	        |   Logistic Regression
 Explainability	                |   SHAP Explainer
 
+
+📦 Dependencies
+
+Key packages used:
+
+transformers, sentence-transformers
+scikit-learn, shap
+torch, pandas, numpy
+
+---
+
+📜 Example Output
+Predicted Architecture: MVC
+
+Top SHAP Dimensions:
+  Dim 2 (SHAP = 0.0057)
+  Dim 0 (SHAP = -0.0048)
+
+Justification:
+The predicted architecture for the described system is MVC...
+
+---
 
 ▶️ Running the Pipeline
 
