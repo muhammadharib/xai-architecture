@@ -1,0 +1,1 @@
+A personal finance dashboard that allows users to log income and expenses, set saving goals, create budgets, and view financial analytics, through charts and summaries

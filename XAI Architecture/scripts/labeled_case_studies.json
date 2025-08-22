@@ -1,0 +1,336 @@
+[
+{
+  "system_description": "A university course management portal with login, dashboards for students and instructors, course content, and grading tools.",
+  "functional_requirements": [
+    {
+      "title": "User Authentication",
+      "description": "Allow students and instructors to log in securely."
+    },
+    {
+      "title": "Course Dashboard",
+      "description": "Display enrolled courses, assignments, and grades."
+    },
+    {
+      "title": "Instructor Tools",
+      "description": "Allow instructors to upload content and post grades."
+    }
+  ],
+  "non_functional_requirements": [
+    {
+      "title": "Usability",
+      "description": "Should be intuitive and easy to navigate."
+    },
+    {
+      "title": "Security",
+      "description": "Ensure data protection and access control."
+    }
+  ],
+  "architecture_label": "MVC"
+  },
+  {
+    "system_description": "A social media platform that handles user-generated content, real-time notifications, messaging, and news feeds.",
+    "functional_requirements": [
+      {"title": "Content Posting", "description": "Allow users to create and share text, image, and video posts."},
+      {"title": "Messaging", "description": "Enable real-time private and group messaging."},
+      {"title": "News Feed", "description": "Show personalized content feed to users based on activity."},
+      {"title": "Notifications", "description": "Send real-time notifications for likes, comments, and new messages."},
+      {"title": "User Profile", "description": "Users can view and edit their public profile information."}
+    ],
+    "non_functional_requirements": [
+      {"title": "Low Latency", "description": "Real-time interactions must occur under 200ms."},
+      {"title": "Scalability", "description": "System must scale to support millions of users."},
+      {"title": "High Availability", "description": "Ensure 99.99% uptime for global users."},
+      {"title": "Data Privacy", "description": "Encrypt messages and posts for end-to-end privacy."},
+      {"title": "Moderation", "description": "Support automated and manual content moderation tools."}
+    ],
+    "architecture_label": "Event-Driven"
+  },
+  {
+    "system_description": "An online banking system that supports user accounts, transactions, transfers, and statement generation.",
+    "functional_requirements": [
+      {"title": "Account Management", "description": "Create, update, and delete user accounts."},
+      {"title": "Fund Transfer", "description": "Enable secure transfer of funds between accounts."},
+      {"title": "Transaction History", "description": "Display user transactions in a paginated format."},
+      {"title": "Statement Generation", "description": "Allow users to download monthly bank statements."},
+      {"title": "User Login", "description": "Support multi-factor authentication during login."}
+    ],
+    "non_functional_requirements": [
+      {"title": "Security", "description": "All user data and communication must be encrypted."},
+      {"title": "Performance", "description": "System must process transactions in under 1 second."},
+      {"title": "Availability", "description": "System must be available 24/7."},
+      {"title": "Compliance", "description": "Meet all financial regulations (e.g., KYC, AML)."},
+      {"title": "Audit Logging", "description": "Maintain full logs for all sensitive operations."}
+    ],
+    "architecture_label": "Microservices"
+  },
+  {
+    "system_description": "A personal health tracking mobile app that logs diet, sleep, physical activity, and vital signs.",
+    "functional_requirements": [
+      {"title": "Diet Logging", "description": "Users can input meals and track calorie intake."},
+      {"title": "Sleep Tracking", "description": "Track and visualize sleep duration and quality."},
+      {"title": "Activity Logging", "description": "Record workouts and daily steps."},
+      {"title": "Vitals Monitoring", "description": "Allow input of vitals like heart rate and blood pressure."},
+      {"title": "Health Summary", "description": "Show visual trends of health over time."}
+    ],
+    "non_functional_requirements": [
+      {"title": "Data Sync", "description": "Synchronize data across devices securely."},
+      {"title": "Usability", "description": "User interface should follow health app accessibility standards."},
+      {"title": "Offline Support", "description": "App should work offline with later sync."},
+      {"title": "Responsiveness", "description": "UI should respond within 200ms."},
+      {"title": "Portability", "description": "Support Android and iOS platforms."}
+    ],
+    "architecture_label": "MVC"
+  },
+  {
+    "system_description": "A university learning management system (LMS) for students to access courses, submit assignments, and take quizzes.",
+    "functional_requirements": [
+      {"title": "Course Enrollment", "description": "Allow students to enroll in available courses."},
+      {"title": "Assignment Upload", "description": "Enable students to submit documents for grading."},
+      {"title": "Quiz Engine", "description": "Support timed quizzes with auto-scoring."},
+      {"title": "Grades Portal", "description": "Display performance metrics and grades."},
+      {"title": "Discussion Forums", "description": "Enable collaborative discussion among students."}
+    ],
+    "non_functional_requirements": [
+      {"title": "Security", "description": "Authenticate all user actions securely."},
+      {"title": "Availability", "description": "Service should be available during academic hours."},
+      {"title": "Scalability", "description": "Support spikes during exams and assignment deadlines."},
+      {"title": "Responsiveness", "description": "Load course pages under 1 second."},
+      {"title": "Maintainability", "description": "Codebase should allow easy course content updates."}
+    ],
+    "architecture_label": "Layered"
+  },
+  {
+    "system_description": "A video streaming platform offering on-demand video playback, recommendations, and user subscriptions.",
+    "functional_requirements": [
+      {"title": "Video Playback", "description": "Stream high-definition video content with adaptive bitrate."},
+      {"title": "User Subscriptions", "description": "Handle paid subscriptions and access control."},
+      {"title": "Content Library", "description": "Browse and search a large video collection."},
+      {"title": "Watch History", "description": "Store and show recently watched videos."},
+      {"title": "Recommendations", "description": "Recommend content based on viewing behavior."}
+    ],
+    "non_functional_requirements": [
+      {"title": "Performance", "description": "Ensure video loads in <3 seconds on average."},
+      {"title": "Scalability", "description": "Scale to support 1M+ concurrent viewers."},
+      {"title": "Availability", "description": "Target 99.999% uptime SLA."},
+      {"title": "Security", "description": "Protect DRM content and personal data."},
+      {"title": "Logging", "description": "Track user behavior for analytics and quality monitoring."}
+    ],
+    "architecture_label": "Microservices"
+  },
+  {
+    "system_description": "A desktop-based project management tool for task tracking, timelines, and team collaboration.",
+    "functional_requirements": [
+      {"title": "Task Management", "description": "Users can create, assign, and track tasks."},
+      {"title": "Timeline Visualization", "description": "Gantt charts and timelines for project tracking."},
+      {"title": "Notifications", "description": "Notify team members of deadlines and changes."},
+      {"title": "File Sharing", "description": "Allow attachment of files to tasks."},
+      {"title": "Collaboration Tools", "description": "Real-time team discussions and comments on tasks."}
+    ],
+    "non_functional_requirements": [
+      {"title": "Performance", "description": "UI should remain responsive with large projects."},
+      {"title": "Usability", "description": "Should be intuitive for new users to navigate."},
+      {"title": "Offline Support", "description": "Support offline task editing and later sync."},
+      {"title": "Cross-Platform", "description": "Run on Windows, Mac, and Linux."},
+      {"title": "Security", "description": "Encrypt stored project files."}
+    ],
+    "architecture_label": "MVC"
+  },
+  {
+    "system_description": "A personal finance dashboard that allows users to log income/expenses, create budgets, set savings goals, and view analytics.",
+    "functional_requirements": [
+      { "title": "Income Logging", "description": "Log multiple income sources." },
+      { "title": "Expense Tracking", "description": "Track expenses in categories." },
+      { "title": "Budget Creation", "description": "Create and manage budgets." },
+      { "title": "Savings Goal", "description": "Set savings targets and track progress." },
+      { "title": "Analytics", "description": "Visualize financial data with charts." }
+    ],
+    "non_functional_requirements": [
+      { "title": "Security", "description": "Encrypt all user financial data." },
+      { "title": "Responsiveness", "description": "Load dashboard within 2 seconds." }
+    ],
+    "architecture_label": "MVC"
+  },
+  {
+    "system_description": "A real-time ride sharing application for urban transport.",
+    "functional_requirements": [
+      { "title": "Driver Tracking", "description": "Track driver locations in real time." },
+      { "title": "Ride Requests", "description": "Users can request rides with pickup/drop locations." },
+      { "title": "Fare Estimation", "description": "System estimates fare dynamically." }
+    ],
+    "non_functional_requirements": [
+      { "title": "Real-Time Updates", "description": "All location data must be updated live." },
+      { "title": "Scalability", "description": "Support up to 10,000 users concurrently." }
+    ],
+    "architecture_label": "Event-Driven"
+  },
+  {
+    "system_description": "An online marketplace for electronics with vendor and buyer interfaces.",
+    "functional_requirements": [
+      { "title": "Product Listing", "description": "Vendors can list products with details." },
+      { "title": "Shopping Cart", "description": "Buyers can add products to cart and checkout." },
+      { "title": "Order History", "description": "Users can view previous orders." }
+    ],
+    "non_functional_requirements": [
+      { "title": "Scalability", "description": "Must support sales events with heavy traffic." },
+      { "title": "Integration", "description": "Integrate with payment gateways and CRMs." }
+    ],
+    "architecture_label": "Microservices"
+  },
+  {
+    "system_description": "A university course management system to handle grading, assignments, and schedules.",
+    "functional_requirements": [
+      { "title": "Grade Entry", "description": "Faculty can enter grades for students." },
+      { "title": "Assignment Upload", "description": "Students can submit assignments online." },
+      { "title": "Timetable Viewer", "description": "View weekly schedules by department." }
+    ],
+    "non_functional_requirements": [
+      { "title": "Modularity", "description": "Separate grading, scheduling, and assignment components." },
+      { "title": "Authentication", "description": "Only logged-in users can access data." }
+    ],
+    "architecture_label": "Layered"
+  },
+  {
+    "system_description": "A real-time traffic monitoring system that collects sensor data from multiple locations and provides alerts for congestion and accidents.",
+    "functional_requirements": [
+      {
+        "title": "Sensor Data Collection",
+        "description": "Collect real-time traffic data from distributed sensors."
+      },
+      {
+        "title": "Accident Detection",
+        "description": "Analyze patterns to detect and alert for accidents."
+      },
+      {
+        "title": "Congestion Monitoring",
+        "description": "Detect and predict congestion based on vehicle density."
+      },
+      {
+        "title": "Map Visualization",
+        "description": "Display traffic patterns on an interactive map."
+      },
+      {
+        "title": "Notification Alerts",
+        "description": "Send real-time alerts to subscribed users or authorities."
+      }
+    ],
+    "non_functional_requirements": [
+      {
+        "title": "Low Latency",
+        "description": "System must process sensor data with under 1 second delay."
+      },
+      {
+        "title": "High Availability",
+        "description": "System should be operational 99.9% of the time."
+      },
+      {
+        "title": "Scalability",
+        "description": "System must scale to support 1000+ sensors."
+      },
+      {
+        "title": "Data Accuracy",
+        "description": "Sensor data must maintain 95% accuracy rate."
+      },
+      {
+        "title": "Fault Tolerance",
+        "description": "System must gracefully recover from individual node failures."
+      }
+    ],
+    "architecture_label": "Event-Driven"
+  },
+  {
+    "system_description": "An e-commerce backend system that handles user orders, inventory, payments, and delivery updates.",
+    "functional_requirements": [
+      {
+        "title": "Order Processing",
+        "description": "Handle user orders and payment processing securely."
+      },
+      {
+        "title": "Inventory Management",
+        "description": "Maintain real-time inventory counts for all products."
+      },
+      {
+        "title": "Payment Gateway",
+        "description": "Integrate third-party payment systems for transactions."
+      },
+      {
+        "title": "Shipping Updates",
+        "description": "Send shipping status updates to customers."
+      },
+      {
+        "title": "Order History",
+        "description": "Allow users to view past purchases and receipts."
+      }
+    ],
+    "non_functional_requirements": [
+      {
+        "title": "Security",
+        "description": "All payment data must be encrypted and PCI-compliant."
+      },
+      {
+        "title": "Performance",
+        "description": "API responses should return in under 500ms."
+      },
+      {
+        "title": "Uptime",
+        "description": "System must maintain 99.99% uptime."
+      },
+      {
+        "title": "Integration",
+        "description": "Should integrate with at least 3 logistics APIs."
+      },
+      {
+        "title": "Logging",
+        "description": "Log all transactions and changes for auditing purposes."
+      }
+    ],
+    "architecture_label": "Microservices"
+  },
+  {
+    "system_description": "A desktop photo editing application that allows users to open images, apply filters, and save edited versions.",
+    "functional_requirements": [
+      {
+        "title": "Image Upload",
+        "description": "Allow users to upload and open image files."
+      },
+      {
+        "title": "Apply Filters",
+        "description": "Provide standard image filters like brightness, contrast, etc."
+      },
+      {
+        "title": "Undo/Redo",
+        "description": "Support multi-level undo and redo functionality."
+      },
+      {
+        "title": "Image Export",
+        "description": "Allow users to save edited images in various formats."
+      },
+      {
+        "title": "Tool Palettes",
+        "description": "Provide UI palettes for tools like brush, eraser, etc."
+      }
+    ],
+    "non_functional_requirements": [
+      {
+        "title": "Responsiveness",
+        "description": "Filters must apply within 1 second on standard machines."
+      },
+      {
+        "title": "Stability",
+        "description": "System must not crash even on large images (up to 50MB)."
+      },
+      {
+        "title": "Usability",
+        "description": "UI should follow standard accessibility guidelines."
+      },
+      {
+        "title": "Performance",
+        "description": "App must run smoothly on systems with 4GB RAM."
+      },
+      {
+        "title": "Portability",
+        "description": "Should run on both Windows and Mac platforms."
+      }
+    ],
+    "architecture_label": "Layered"
+  }
+]
