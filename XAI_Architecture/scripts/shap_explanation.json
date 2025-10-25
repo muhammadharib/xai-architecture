@@ -1,21 +1,21 @@
 {
-  "predicted_architecture": "MVC",
+  "predicted_architecture": "Event-Driven",
   "top_contributing_features": [
     {
-      "dimension": 2,
-      "shap_value": 0.005699637040315061
-    },
-    {
       "dimension": 0,
-      "shap_value": -0.004808647576010168
+      "shap_value": 0.0018277439460415064
     },
     {
       "dimension": 1,
-      "shap_value": -0.004382348112191501
+      "shap_value": -0.0014048641762661421
+    },
+    {
+      "dimension": 2,
+      "shap_value": -0.0008720429197202734
     },
     {
       "dimension": 3,
-      "shap_value": 0.003491358647886607
+      "shap_value": 0.00044916314994490906
     }
   ]
 }

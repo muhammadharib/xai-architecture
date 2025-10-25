@@ -1,4 +1,6 @@
 import json
+from joblib import dump
+
 
 # Scoring rules based on keyword matches
 architecture_rules = {
@@ -54,6 +56,7 @@ def main():
         json.dump(result, f, indent=2)
 
     print(" Saved to predicted_architecture.json")
+
 
 if __name__ == "__main__":
     main()

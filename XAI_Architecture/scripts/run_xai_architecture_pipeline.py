@@ -1,5 +1,7 @@
+import shap
 import subprocess
 import json
+import sys
 
 def ask_description():
     print("Enter your system description:")
@@ -12,12 +14,16 @@ def save_system_description(system_description):
 
 def run_script(script_name):
     print(f"\nRunning {script_name} ...")
-    result = subprocess.run(["python", script_name], capture_output=True, text=True)
-    if result.returncode == 0:
+    try:
+        result = subprocess.run(
+            [sys.executable, script_name],
+            check=True
+        )
         print(f"{script_name} completed.\n")
-        print(result.stdout)
-    else:
-        print(f"Error running {script_name}:\n{result.stderr}")
+    except subprocess.CalledProcessError as e:
+        print(f"Error running {script_name}:")
+        print(e)
+
 
 def display_outputs():
     print("\nFinal Outputs:")

@@ -46,8 +46,10 @@ def main():
     clf.fit(X_embed, y_encoded)
 
     # Predict
-    pred_index = clf.predict(X_target_embed)[0]
-    pred_label = label_encoder.inverse_transform([pred_index])[0]
+    with open("predicted_architecture.json", "r", encoding="utf-8") as f:
+        pred_label = json.load(f)["predicted_architecture"]
+    pred_index = label_encoder.transform([pred_label])[0]
+
     print(f"Predicted Architecture: {pred_label}")
 
     # SHAP Explanation
@@ -74,6 +76,7 @@ def main():
             for idx, score in top_dims
         ]
     }
+
 
     with open("shap_explanation.json", "w", encoding="utf-8") as f:
         json.dump(explanation, f, indent=2)
