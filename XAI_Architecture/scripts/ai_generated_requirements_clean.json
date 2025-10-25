@@ -1,67 +1,39 @@
 {
-  "system_description": "A financial dashboard system that takes user account data, transaction history, and market data as input. The system outputs insights such as monthly spending trends, savings goals progress, investment performance summaries, and financial health scores. It supports user interaction through visual widgets and graphs, allows for real-time updates, and generates personalized recommendations for budgeting and investments. The goal is to assist users in understanding, managing, and improving their financial well-being.",
+  "system_description": "A real-time traffic monitoring system that collects data from roadside sensors, CCTV cameras, and GPS devices. It aggregates this data to detect congestion, suggest alternate routes, and inform emergency response units. The system should support real-time alerts, dashboard visualization, and integration with municipal databases. Performance, scalability, and responsiveness are critical due to high-volume, time-sensitive data streams.",
   "functional_requirements": [
     {
-      "title": "User account data input",
-      "description": "The system should be able to take user account data as input."
+      "title": "Real-time data collection",
+      "description": "The system should collect data from roadside sensors, CCTV cameras, and GPS devices in real-time."
     },
     {
-      "title": "Transaction history input",
-      "description": "The system should be able to take transaction history as input."
+      "title": "Data aggregation",
+      "description": "The system should aggregate the collected data to detect congestion, suggest alternate routes, and inform emergency response units."
     },
     {
-      "title": "Market data input",
-      "description": "The system should be able to take market data as input."
+      "title": "Real-time alerts",
+      "description": "The system should provide real-time alerts to users based on the detected congestion and other relevant information."
     },
     {
-      "title": "Monthly spending trends output",
-      "description": "The system should output monthly spending trends."
+      "title": "Dashboard visualization",
+      "description": "The system should provide a dashboard visualization to users for easy understanding of the traffic situation."
     },
     {
-      "title": "Savings goals progress output",
-      "description": "The system should output savings goals progress."
-    },
-    {
-      "title": "Investment performance summaries output",
-      "description": "The system should output investment performance summaries."
-    },
-    {
-      "title": "Financial health scores output",
-      "description": "The system should output financial health scores."
-    },
-    {
-      "title": "User interaction through visual widgets and graphs",
-      "description": "The system should support user interaction through visual widgets and graphs."
-    },
-    {
-      "title": "Real-time updates",
-      "description": "The system should allow for real-time updates."
-    },
-    {
-      "title": "Personalized recommendations for budgeting and investments",
-      "description": "The system should generate personalized recommendations for budgeting and investments."
+      "title": "Integration with municipal databases",
+      "description": "The system should be able to integrate with municipal databases to access additional information and enhance its functionality."
     }
   ],
   "non_functional_requirements": [
     {
       "title": "Performance",
-      "description": "The system should be able to handle a large volume of data and provide real-time updates."
-    },
-    {
-      "title": "Security",
-      "description": "The system should be secure and protect user data."
-    },
-    {
-      "title": "Reliability",
-      "description": "The system should be reliable and available at all times."
-    },
-    {
-      "title": "Usability",
-      "description": "The system should be easy to use and understand."
+      "description": "The system should be able to handle high-volume, time-sensitive data streams with low latency."
     },
     {
       "title": "Scalability",
-      "description": "The system should be scalable to handle increasing user demand."
+      "description": "The system should be able to scale up or down based on the traffic volume and data processing requirements."
+    },
+    {
+      "title": "Responsiveness",
+      "description": "The system should respond quickly to user requests and provide timely updates."
     }
   ]
 }

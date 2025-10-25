@@ -3,19 +3,19 @@
   "top_contributing_features": [
     {
       "dimension": 0,
-      "shap_value": 0.0018277439460415064
+      "shap_value": 0.0029805238168637764
     },
     {
       "dimension": 1,
-      "shap_value": -0.0014048641762661421
+      "shap_value": -0.002290928740805611
     },
     {
       "dimension": 2,
-      "shap_value": -0.0008720429197202734
+      "shap_value": -0.0014220507731309302
     },
     {
       "dimension": 3,
-      "shap_value": 0.00044916314994490906
+      "shap_value": 0.0007324556970727647
     }
   ]
 }

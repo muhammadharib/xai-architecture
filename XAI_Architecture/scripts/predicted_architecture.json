@@ -1,9 +1,9 @@
 {
   "predicted_architecture": "Event-Driven",
   "architecture_scores": {
-    "Microservices": 1,
-    "Event-Driven": 6,
-    "MVC": 2,
-    "Layered": 0
+    "Microservices": 2,
+    "Event-Driven": 5,
+    "MVC": 0,
+    "Layered": 3
   }
 }
